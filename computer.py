@@ -6,7 +6,7 @@ class AI(Player):
     def __init__(self):
         super().__init__()
         self.name = ''
-        self.gestures = Gestures()
+        #self.gestures = Gestures()
         self.score = []
         self.choose = ''
 
@@ -15,4 +15,4 @@ class AI(Player):
 
     def choose_gesture(self):
         print(self.gestures)
-        self.choose = #choose randomly
+        #self.choose = #choose randomly
