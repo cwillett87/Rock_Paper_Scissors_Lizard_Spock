@@ -30,10 +30,16 @@ class Game:
         print('Let the game begin!')
         self.player_one.choose_gesture()
         self.player_two.choose_gesture()
-        if self.player_one.choose == self.player_two.choose.gestures.gestures.def_gest[0] or
-            self.player_two.choose.gestures.gestures.def_gest[1]:
+        self.keep_score()
 
+    def keep_score(self):
+        if self.player_two.choose.def_gest[0] == self.player_one.choose.name or self.player_two.choose.def_gest[1] == self.player_one.choose.name:
+            self.player_two.score.append('Win')
+        elif self.player_one.choose.def_gest[0] == self.player_two.choose.name or self.player_one.choose.def_gest[1] == self.player_two.choose.name:
+            self.player_one.score.append('Win')
+        else:
+            self.player_one.score.append('Tie')
+            self.player_two.score.append('Tie')
 
-#keep score
 
 #determine winner

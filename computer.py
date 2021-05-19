@@ -8,7 +8,7 @@ class AI(Player):
         self.name = ''
         #self.gestures = Gestures()
         self.score = []
-        self.choose = ''
+        self.choose = []
 
     def set_name(self):
         self.name = input('Enter player name:')
