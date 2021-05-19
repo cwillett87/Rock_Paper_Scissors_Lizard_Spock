@@ -9,7 +9,7 @@ class AI(Player):
         self.set_name()
 
     def set_name(self):
-        self.name = input('Enter player name:')
+        self.name = input('Enter computer name:')
 
     def choose_gesture(self):
         choice = random.choice(self.gestures.gestures)

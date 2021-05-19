@@ -24,6 +24,9 @@ class Game:
             print('Enter player 2')
             self.player_two = Human()
             print(' ')
+        else:
+            print('Enter a 1 or 2')
+            self.choose_player_two()
 
     def run_game(self):
         self.display_welcome()
