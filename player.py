@@ -31,4 +31,5 @@ class Player:
         elif case == self.gestures.gestures[4].name:
             self.choose = self.gestures.gestures[4]
         else:
+            print('Invalid Input!')
             self.choose_gesture()
