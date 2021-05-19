@@ -8,13 +8,13 @@ class Gestures:
         self.add_to_list()
 
     def add_to_list(self):
-        rock = Handgesture('Rock', 'Scissors', 'Lizard')
+        rock = Handgesture('rock', 'scissors', 'lizard')
         self.gestures.append(rock)
-        paper = Handgesture('Paper', 'Rock', 'Spock')
+        paper = Handgesture('paper', 'rock', 'spock')
         self.gestures.append(paper)
-        scissors = Handgesture('Scissors', 'Paper', 'Lizard')
+        scissors = Handgesture('scissors', 'paper', 'lizard')
         self.gestures.append(scissors)
-        lizard = Handgesture('Lizard', 'Paper', 'Spock')
+        lizard = Handgesture('lizard', 'paper', 'spock')
         self.gestures.append(lizard)
-        spock = Handgesture('Spock', 'Rock', 'Scissors')
+        spock = Handgesture('spock', 'rock', 'scissors')
         self.gestures.append(spock)
