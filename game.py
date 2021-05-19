@@ -28,9 +28,12 @@ class Game:
 
     def round(self):
         print('Let the game begin!')
-        self.player_one.choose_gesture()
-        self.player_two.choose_gesture()
-        self.keep_score()
+        while len(self.player_one.score) < 2 and len(self.player_one.score) < 2:
+            self.player_one.choose_gesture()
+            self.player_two.choose_gesture()
+            self.keep_score()
+            if len(self.player_one.score) == 2 or len(self.player_one.score) == 2:
+                self.display_winner()
 
     def keep_score(self):
         if self.player_two.choose.def_gest[0] == self.player_one.choose.name or self.player_two.choose.def_gest[1] == self.player_one.choose.name:
@@ -38,8 +41,7 @@ class Game:
         elif self.player_one.choose.def_gest[0] == self.player_two.choose.name or self.player_one.choose.def_gest[1] == self.player_two.choose.name:
             self.player_one.score.append('Win')
         else:
-            self.player_one.score.append('Tie')
-            self.player_two.score.append('Tie')
+            print('Round ended in a Draw!')
 
-
-#determine winner
+    def display_winner(self):
+        pass
