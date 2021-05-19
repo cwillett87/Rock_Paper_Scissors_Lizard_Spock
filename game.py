@@ -63,5 +63,19 @@ class Game:
     def display_winner(self):
         if len(self.player_one.score) == 2:
             print(f'{self.player_one.name} Wins the game!')
+            print(' ')
+            self.replay()
         elif len(self.player_two.score) == 2:
             print(f'{self.player_two.name} Wins the game!')
+            print(' ')
+            self.replay()
+
+    def replay(self):
+        replay = input(f'{self.player_one.name} Would you like to play again?')
+        if replay == 'yes':
+            self.run_game()
+        elif replay == 'no':
+            print(' ')
+            print(f'Thanks for playing {self.player_one.name}, see you later!')
+        else:
+            self.replay()
