@@ -44,4 +44,7 @@ class Game:
             print('Round ended in a Draw!')
 
     def display_winner(self):
-        pass
+        if len(self.player_one.score) == 2:
+            print(f'{self.player_one.name} Wins the game!')
+        elif len(self.player_one.score) == 2:
+            print(f'{self.player_two.name} Wins the game!')
